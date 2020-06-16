@@ -45,8 +45,26 @@
 }
 
 @media (max-height: 700px) {
-  .contact-info {
-    top: 70%;
+  .contact-method {
+    width: 160px;
+    height: 120px;
+
+  }
+
+  .contact-method span{
+    font-size: 0.7rem
+  }
+}
+
+@media (max-width: 320px) {
+  .contact-method {
+    width: 150px;
+    height: 100px;
+
+  }
+
+  .contact-method span{
+    font-size: 0.7rem
   }
 }
 

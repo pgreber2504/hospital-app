@@ -28,6 +28,7 @@ body {
   line-height: 1.6;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 0;
+  overflow: hidden;
 }
 
 .app {
