@@ -20,10 +20,17 @@ export default {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  -moz-appearance: none; 
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;   
+   -moz-border-radius: 0;    
+   border-radius: 0;
 }
 
 body {
   background-color: #92bde7;
+  
   color: #485e74;
   line-height: 1.6;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

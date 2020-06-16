@@ -48,7 +48,7 @@
     <div class="patient-details">
       <h3>Dane osobowe</h3>
 
-      <form>
+      <form @submit.prevent>
         <p>
           <label for>Imię pacjenta</label>
           <input type="text" @keyup.enter="submitPatient" v-model="order.patientInfo.name" />
@@ -196,7 +196,7 @@ export default {
 <style lang="scss">
 .wrapper {
   box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
-  margin: 20px 10px;
+  margin: 70px 10px;
 }
 
 .wrapper > * {

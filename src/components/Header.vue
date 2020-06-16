@@ -50,10 +50,12 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 8vh;
+  min-height: 9vh;
+  width: 100%;
   background-color: #7396b8;
   z-index: 2;
-
+  position: fixed;
+  top: 0;
 }
 
 .logo {
