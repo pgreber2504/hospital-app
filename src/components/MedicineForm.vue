@@ -22,7 +22,7 @@
 
         <p>
           <label>Data podania leku</label>
-          <datepicker :language="pl" v-model="order.date"></datepicker>
+          <datepicker class="datepicker" :language="pl" v-model="order.date"></datepicker>
         </p>
 
         <p>
@@ -257,6 +257,10 @@ export default {
   color: white;
   outline: 0;
   transition: background-color 0.7s ease-out;
+}
+
+.datepicker{
+  color: black;
 }
 
 .error {
