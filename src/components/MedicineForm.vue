@@ -7,7 +7,11 @@
         <p>
           <label for>Rodzaj leku</label>
           <select v-model="order.medicine">
-            <option v-for="(item, index) in tablets" :key="index" :value="item">{{item.name}}</option>
+            <option
+              v-for="(item, index) in tablets"
+              :key="index"
+              :value="item"
+            >{{item.name}}, {{item.quantity}}</option>
           </select>
         </p>
 
@@ -28,7 +32,7 @@
         <p>
           <label for>Ilość leku</label>
           <select name id v-model="order.amount">
-            <option v-for="n in 10" :key="n" :value="n">{{n}}</option>
+            <option v-for="n in 10" :key="n" :value="n">{{n}} tab.</option>
           </select>
         </p>
 
@@ -259,7 +263,7 @@ export default {
   transition: background-color 0.7s ease-out;
 }
 
-.datepicker{
+.datepicker {
   color: black;
 }
 
@@ -343,15 +347,15 @@ export default {
   .wrapper > * {
     padding: 2em;
   }
-  
-  .error{
+
+  .error {
     font-size: inherit;
   }
 }
 
-@media (max-width: 321px){
+@media (max-width: 321px) {
   .medicine-details form,
-  .patient-details form{
+  .patient-details form {
     font-size: 0.5em;
   }
 }
