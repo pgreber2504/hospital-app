@@ -196,7 +196,7 @@ export default {
 <style lang="scss">
 .wrapper {
   box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
-  margin: 70px 10px;
+  margin: 80px 10px;
 }
 
 .wrapper > * {
@@ -267,6 +267,7 @@ export default {
   color: red;
   grid-column: 1/3;
   text-align: center;
+  font-size: 0.8rem;
 }
 
 .success {
@@ -336,10 +337,22 @@ export default {
   .wrapper {
     display: grid;
     grid-template-columns: 3fr 2fr;
+    margin-top: 30vh;
   }
 
   .wrapper > * {
     padding: 2em;
+  }
+  
+  .error{
+    font-size: inherit;
+  }
+}
+
+@media (max-width: 321px){
+  .medicine-details form,
+  .patient-details form{
+    font-size: 0.5em;
   }
 }
 </style>

@@ -1,23 +1,31 @@
 <template>
   <div class="contact-info">
     <div class="contact-method">
-      <i class="fas fa-envelope"></i>
-      <span>p.greber2504@gmail.com</span>
+      <a href="mailto: p.greber2504@gmail.com">
+        <i class="fas fa-envelope"></i>
+        <span>p.greber2504@gmail.com</span>
+      </a>
     </div>
 
     <div class="contact-method">
-      <i class="fab fa-github"></i>
-      <span>github.com/pgreber2504</span>
+      <a href="https://github.com/pgreber2504">
+        <i class="fab fa-github"></i>
+        <span>github.com/pgreber2504</span>
+      </a>
     </div>
 
     <div class="contact-method">
-      <i class="fab fa-linkedin"></i>
-      <span>linkedin.com/in/pgreber2504/</span>
+      <a href="https://linkedin.com/in/pgreber2504/">
+        <i class="fab fa-linkedin"></i>
+        <span>linkedin.com/in/pgreber2504/</span>
+      </a>
     </div>
 
     <div class="contact-method">
+      <a href="https://www.google.com/maps/place/Łódź">
       <i class="fas fa-map-marker-alt"></i>
       <span>Lodz, PL</span>
+      </a>
     </div>
   </div>
 </template>
@@ -48,11 +56,10 @@
   .contact-method {
     width: 160px;
     height: 120px;
-
   }
 
-  .contact-method span{
-    font-size: 0.7rem
+  .contact-method span {
+    font-size: 0.7rem;
   }
 }
 
@@ -60,11 +67,10 @@
   .contact-method {
     width: 150px;
     height: 100px;
-
   }
 
-  .contact-method span{
-    font-size: 0.7rem
+  .contact-method span {
+    font-size: 0.7rem;
   }
 }
 
@@ -79,6 +85,11 @@
   background-color: #7396b8;
   transition: transform 0.6s;
   z-index: 1;
+}
+
+.contact-method a{
+  text-decoration: none;
+  color: inherit;
 }
 
 .contact-method span {

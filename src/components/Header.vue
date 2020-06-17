@@ -12,7 +12,7 @@
         @click="active = false"
         :class="{'animated': active, 'route-link-actived': $route.name === 'Order'}"
       >
-        <router-link to="/order">Zlecenie leków</router-link>
+        <router-link to="/order">Kreator zleceń</router-link>
       </li>
       <li
         @click="active = false"

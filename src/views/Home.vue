@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <h1>Zlecenia lekowe</h1>
-    <router-link class="btn" to="/order">Tworzenie zleceń</router-link>
+    <router-link class="btn" to="/order">Kreator zleceń</router-link>
     <router-link class="btn" to="/contact">Kontakt</router-link>
   </div>
 </template>
@@ -32,7 +32,7 @@
 
 @media (max-width: 430px) {
   .home h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
